@@ -23,7 +23,8 @@ def handler(job: Dict[str, Any]) -> Dict[str, Any]:
     if not isinstance(messages, list) or not messages:
         return {"raw_text": ""}
 
-    text = generate_response(messages=messages, max_tokens=max_tokens, temperature=temperature)
-    return {"raw_text": text}
+    # text = generate_response(messages=messages, max_tokens=max_tokens, temperature=temperature)
+    # return {"raw_text": text}
+    return {"raw_text": " Received:" + messages }
 
 runpod.serverless.start({"handler": handler})
