@@ -14,7 +14,7 @@ RUN python3 -m pip install --upgrade pip
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-COPY inference.py handler.py ./
+COPY inference.py vllm_inference.py handler.py ./
 
 # RunPod expects your container to start the worker (runpod serverless)
 CMD ["python3", "-u", "handler.py"]
