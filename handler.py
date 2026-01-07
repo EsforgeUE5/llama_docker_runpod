@@ -20,8 +20,8 @@ def handler(job: Dict[str, Any]) -> Dict[str, Any]:
     max_tokens = inp.get("max_tokens", 512)
     temperature = inp.get("temperature", 0.7)
 
-    if not isinstance(messages, list) or not messages:
-        return {"raw_text": ""}
+    # if not isinstance(messages, list) or not messages:
+    #     return {"raw_text": ""}
 
     # text = generate_response(messages=messages, max_tokens=max_tokens, temperature=temperature)
     # return {"raw_text": text}
