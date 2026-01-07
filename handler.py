@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Any, Dict
 
 import runpod
-from inference import generate_response
+# from inference import generate_response
 
 def handler(job: Dict[str, Any]) -> Dict[str, Any]:
     """RunPod serverless handler.
